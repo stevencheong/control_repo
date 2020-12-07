@@ -19,3 +19,7 @@ nodes /^web/ {
 nodes /^db/ {
 include role::db_server 
 }
+
+node puppet.local {
+   include role::master
+ }
